@@ -12,4 +12,6 @@
         {{article.created_at}}
     </div>
 </div>
+<a href="{% url 'articles:delete' id=article.id %}"class="btn btn-danger">delete</a>
+<a href="{% url 'articles:edit' id=article.id %}"class="btn btn-primary">update</a>
 {% endblock %}
